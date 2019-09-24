@@ -1,0 +1,27 @@
+{
+  "name": "foundation-app",
+  "version": "1.0.0",
+  "description": "The foundation app for building experimental projects on top of",
+  "main": "index.js",
+  "author": "subabuko",
+  "license": "MIT",
+  "scripts": {
+    "babel:build": "npx babel ./src -d ./dist",
+    "commit": "npx git-cz"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "cz-conventional-changelog": "^3.0.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "commitizen": "^4.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
